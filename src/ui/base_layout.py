@@ -11,7 +11,11 @@ def style_background_home():
                     background-color: #E0E3FF !important;
                     padding: 2.5rem !important;
                     border-radius: 5rem !important;
-                    }
+                }
+                # set dark text colour for card headings
+                .stApp h2 {
+                    color: #252525 !important;
+                }
         </style> 
                 """ , 
             unsafe_allow_html=True )
