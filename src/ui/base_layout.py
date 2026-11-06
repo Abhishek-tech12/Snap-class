@@ -12,7 +12,7 @@ def style_background_home():
                     padding: 2.5rem !important;
                     border-radius: 5rem !important;
                 }
-                
+
                 .stApp h2 {
                     color: #252525 !important;
                 }
@@ -64,11 +64,13 @@ def style_base_layout():
             font-family:"Climate Crisis" , sans-serif !important;
             font-size:2rem !important;
             line-heigth: 0.9 !important;
-            margin-bottom:0rem !important
+            margin-bottom:0rem !important;
+            color :# 252525 !important
         }
 
         h3,h4 , p {
         font-family: " Outfit", sans-serif;
+        color: #252525 !important
         }
 
         button{
