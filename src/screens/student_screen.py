@@ -64,9 +64,9 @@ def student_dashboard():
 
         stats=stats_map.get(sid,{"total":0,"attended":0})
         def unenroll_button():
-            if st.button("Unenroll from this course", type="tertiary", icon=":material/delete_forever:"):
+            if st.button("Unenroll from this course", type="tertiary", icon=":material/delete_forever:", key=f"unenroll_{sid}"):
                 unenroll_student_to_subject(student_id,sid)
-                st.toast(f"Unenrolled from {sub["name"]} successfully!")
+                st.toast(f"Unenrolled from {sub['name']} successfully!")
                 st.rerun()
 
         with cols[i % 2]:
@@ -134,7 +134,7 @@ def student_screen():
                         st.session_state.is_logged_in = True 
                         st.session_state.user_role = "student"
                         st.session_state.student_data=student
-                        st.toast(f"Welcome back {student["name"]}")
+                        st.toast(f"Welcome back {student['name']}")
                         time.sleep(1)
                         st.rerun()
 

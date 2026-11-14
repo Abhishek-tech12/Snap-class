@@ -380,6 +380,7 @@ def teacher_screen_register():
                 st.error(message)
     with btnc2:
         if st.button("Login Instead" , type="primary", icon=":material/passkey:", width="stretch"):
+            st.session_state.teacher_login_type="login"
             st.rerun()
 
 
