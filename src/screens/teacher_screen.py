@@ -36,7 +36,7 @@ def teacher_dashboard():
     with c1:
         header_dashboard()
     with c2:
-        st.subheader(f"""Welcome,{teacher_data["name"]}""")
+        st.subheader(f"Welcome,{teacher_data['name']}")
         if st.button("Logout", type="secondary", key="loginbackbtn", shortcut="control+backspace"):
             st.session_state["is_logged_in"]= False
             del st.session_state.teacher_data
@@ -201,7 +201,7 @@ def teacher_tab_manage_subjects():
                 ("🕰️", "classes", sub["total_classes"]),
             ]
             def share_btn():
-                if st.button(f"Share Code: {sub["name"]}", key=f"share_{["subject_code"]}", icon=":material/share:"):
+                if st.button(f"Share Code: {sub["name"]}", key=f"share_{sub["subject_code"]}", icon=":material/share:"):
                     share_subject_dialog(sub["name"], sub["subject_code"])
             
                 st.space()
@@ -319,6 +319,7 @@ def teacher_screen_login():
     with btnc2:
         if st.button("Register Instead" , type="primary", icon=":material/passkey:", width="stretch"):
             st.session_state.teacher_login_type="register"
+            st.rerun()
 
 
     footer_dashboard()
