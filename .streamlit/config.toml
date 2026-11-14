@@ -1,0 +1,10 @@
+[server]
+runOnSave = true
+fileWatcherType = "poll"
+
+[theme]
+base = "light"
+primaryColor = "#5865F2"
+backgroundColor = "#E0E3FF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#252525"
