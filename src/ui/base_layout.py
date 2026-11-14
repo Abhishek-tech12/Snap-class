@@ -63,13 +63,13 @@ def style_base_layout():
         h2{
             font-family:"Climate Crisis" , sans-serif !important;
             font-size:2rem !important;
-            line-heigth: 0.9 !important;
+            line-height: 0.9 !important;
             margin-bottom:0rem !important;
             
         }
 
         h3,h4 , p {
-        font-family: " Outfit", sans-serif;
+        font-family: "Outfit", sans-serif;
         }
 
         button{
